@@ -4,19 +4,27 @@ public class Program
 {
   public static void Main(string[] args)
   {
+    try
+    {
+      
     Console.Write("Numero: ");
     var numero = Console.ReadLine();
 
 
 
-    string resultat = girarNumero(numero);
+    var resultat = GirarNumero(numero);
 
 
 
     Console.WriteLine(resultat);
+    } 
+    catch(IndexOutOfRangeException)
+    {
+      Console.WriteLine("Tens que introduir un numero");
+    }
   }
 
-  public static string girarNumero(string? numero)
+  public static string GirarNumero(string numero)
   {
     var resultat = "";
 
@@ -43,14 +51,14 @@ public class Program
     return resultat;
   }
 
-  public static object giraLaXifra(object numero)
+  public static string giraLaXifra(string numero)
   {
     var nouNumero = "";
 
     for(int i=1; i < numero.Length; i++)
     {
-      nouNumero = $"{numero[i]}"
+      nouNumero = $"{numero[i]}";
     }
-    return $"{nouNumero} {numero[0]}"
+    return $"{nouNumero} {numero[0]}";
   }
 }

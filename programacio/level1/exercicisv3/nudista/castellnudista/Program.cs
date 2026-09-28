@@ -49,22 +49,5 @@ public class Program
                 Console.WriteLine(ex.Message);
             }
         } while (resultat != "Endavant cavaller! Ja pots entrar al castell." && vegades < 2);
-
-
-
-        // for (int i=0; i<1; i++)
-        // {
-        //   if (edat >= 18)
-        //   {
-        //     Console.WriteLine("Endavant cavaller! Ja pots entrar al castell.");
-        //     i = 3;
-        //   } else
-        //   {
-        //     Console.WriteLine("Ho sento cavaller, no pots entrar al castell.");
-        //     Console.Write("Quina edat tens? ");
-        //     fedat = Console.ReadLine();
-        //     edat = Convert.ToInt32(fedat);
-        //   }
-        // }
     }
 }

@@ -12,7 +12,7 @@ public class UnitTest1
         // Arrange
 
         // Act
-        var resultat = Program.girarNumero(numero);
+        var resultat = Program.GirarNumero(numero);
 
         // Assert
         Assert.Equal(esperat, resultat);
