@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="girar/girar.csproj" />
+  <Project Path="girarTest/girarTest.csproj" />
+</Solution>
