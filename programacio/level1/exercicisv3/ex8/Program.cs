@@ -2,16 +2,14 @@
 
 Console.Write("Número: ");
 var num = Console.ReadLine();
-int voltes = 0;
 int suma = 0;
 
 
 
-for (int i=1; num.Length >= i; i++)
+for (int i=0; num.Length > i; i++)
 {
-  var intnum = Convert.ToInt32(num[voltes]);
-  suma =+ intnum;
-  voltes++;
+  var intnum = Convert.ToInt32(num[i].ToString());
+  suma += intnum;
 }
 
 Console.WriteLine(suma);
