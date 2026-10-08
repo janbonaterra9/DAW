@@ -1,0 +1,114 @@
+<plats>
+  <paella>
+    <nom>Paella</nom>
+    <ingredients>
+      <ingredient>
+        <nom>Arròs</nom>
+        <quantitat>200</quantitat>
+        <unitats>grams</unitats>
+        <calories>180</calories>
+      </ingredient>
+      <ingredient>
+        <nom>Camaró</nom>
+        <quantitat>100</quantitat>
+        <unitats>grams</unitats>
+        <calories>90</calories>
+      </ingredient>
+      <ingredient>
+        <nom>Pollastre</nom>
+        <quantitat>150</quantitat>
+        <unitats>grams</unitats>
+        <calories>210</calories>
+      </ingredient>
+      <ingredient>
+        <nom>Safrà</nom>
+        <quantitat>0.5</quantitat>
+        <unitats>grams</unitats>
+        <calories>2</calories>
+      </ingredient>
+      <ingredient>
+        <nom>Aigua</nom>
+        <quantitat>500</quantitat>
+        <unitats>ml</unitats>
+        <calories>0</calories>
+      </ingredient>
+    </ingredients>
+    <allerogens>
+      <allerogen>Pot contenir traces de crustacis</allerogen>
+      <allerogen>Conté safrà</allerogen>
+    </allerogens>
+    <preu>12.50</preu>
+  </paella>
+  <amanidaTonyina>
+    <nom>Amanida de tonyina</nom>
+    <ingredients>
+      <ingredient>
+        <nom>Enciam</nom>
+        <quantitat>80.0</quantitat>
+        <unitats>grams</unitats>
+        <calories>14</calories>
+      </ingredient>
+      <ingredient>
+        <nom>Tomàquet</nom>
+        <quantitat>100.0</quantitat>
+        <unitats>grams</unitats>
+        <calories>18</calories>
+      </ingredient>
+      <ingredient>
+        <nom>Tonyina</nom>
+        <quantitat>120.0</quantitat>
+        <unitats>grams</unitats>
+        <calories>132</calories>
+      </ingredient>
+        <ingredient>
+        <nom>Ou dur</nom>
+        <quantitat>50.0</quantitat>
+        <unitats>grams</unitats>
+        <calories>77</calories>
+      </ingredient>
+      <ingredient>
+        <nom>Oliva</nom>
+        <quantitat>10.0</quantitat>
+        <unitats>unitats</unitats>
+        <calories>40</calories>
+      </ingredient>
+    </ingredients>
+    <allerogens>
+      <allerogen>Ou</allerogen>
+    </allerogens>
+    <preu>8.00</preu>
+  </amanidaTonyina>
+  <cremaCarbassa>
+    <nom>Crema de carbassa</nom>
+    <ingredients>
+      <ingredient>
+        <nom>Carbassa</nom>
+        <quantitat>300.0</quantitat>
+        <unitats>grams</unitats>
+        <calories>85</calories>
+      </ingredient>
+      <ingredient>
+        <nom>Ceba</nom>
+        <quantitat>50.0</quantitat>
+        <unitats>grams</unitats>
+        <calories>20</calories>
+      </ingredient>
+      <ingredient>
+        <nom>Oli d'oliva</nom>
+        <quantitat>10.0</quantitat>
+        <unitats>grams</unitats>
+        <calories>90</calories>
+      </ingredient>
+      <ingredient>
+        <nom>Brou vegetal</nom>
+        <quantitat>400.0</quantitat>
+        <unitats>ml</unitats>
+        <calories>10</calories>
+      </ingredient>
+    </ingredients>
+    <allerogens>
+      <allerogen>Pot contenir traces de llet</allerogen>
+    </allerogens>
+    <preu>6.50</preu>
+  </cremaCarbassa>
+</plats>

@@ -1,0 +1,79 @@
+plat_1:
+  nom:   Paella
+  ingredients:
+    - nom: Arròs
+      quantitat: 200.0
+      unitats: grams
+      calories: 180
+    - nom: Camaró
+      quantitat: 100.0
+      unitats: grams
+      calories: 90
+    - nom: Pollastre
+      quantitat: 150.0
+      unitats: grams
+      calories: 210
+    - nom: Safrà
+      quantitat: 0.5
+      unitats: grams
+      calories: 2
+    - nom: Aigua
+      quantitat: 500
+      unitats: ml
+      calories: 0
+  allerogens:
+    - Pot contenir traces de crustacis
+    - Conté safrà
+  preu: 12.50
+
+  
+plat_2:
+  nom:   Amanida de Tonyina
+  ingredients:
+    - nom: Enciam
+      Quantitat: 80.0
+      Unitats: grams
+      Calories: 14 
+    - nom: Tomàquet
+      Quantitat: 100.0
+      Unitats: grams
+      Calories: 18 
+    - nom: Tonyina
+      Quantitat: 120.0
+      Unitats: grams
+      Calories: 132 
+    - nom: Ou dur
+      Quantitat: 50.0
+      Unitats: grams
+      Calories: 77 
+    - nom: Oliva
+      Quantitat: 10.0
+      Unitats: unitats
+      Calories: 40 
+  al·lergògens:
+    - Ou
+  preu: 8.00
+
+
+plat_3:
+  nom:   Crema de carbassa
+  ingredients:
+    - nom: Carbassa
+      quantitat: 300.0
+      unitats: grams
+      calories: 85
+    - nom: Ceba
+      quantitat: 50.0
+      unitats: grams
+      calories: 20
+    - nom: Oli d'oliva
+      quantitat: 10.0
+      unitats: grams
+      calories: 90
+    - nom: Brou vegetal
+      quantitat: 400
+      unitats: ml
+      calories: 10
+  allerogens:
+    - Pot contenir traces de llet
+  preu: 6.50
