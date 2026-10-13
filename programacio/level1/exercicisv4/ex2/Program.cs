@@ -36,12 +36,12 @@ class Program
 
         for (int i= mesPetit; mesGran > i; i++)
         {
-            for (int j=0; numeros.Length > i; i++)
+            for (int j=0; numeros.Length > j; j++)
             {
-                if (i == numeros[j] + 1)
+                if (i == i + 1)
                 {
-                    
-                }
+                   continue; 
+                } else{}
             }
         }
     }
