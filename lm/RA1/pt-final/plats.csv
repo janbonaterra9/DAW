@@ -1,0 +1,4 @@
+plat_nom,preu,ingredient_nom,ingredient_quantitat,ingredient_unitats,ingredient_calories,alergogens
+Paella,12.50,Arròs,200.0,grams,"180 kcal","Pot contenir traces de crustacis"
+Paella,12.50,Camaró,100.0,grams,"90 kcal","Pot contenir traces de crustacis"
+Paella,12.50,Pollastre,150.0,grams,"210 kcal","Pot contenir traces de crustacis"
