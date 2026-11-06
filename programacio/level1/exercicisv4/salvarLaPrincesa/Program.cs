@@ -1,28 +1,26 @@
-﻿using System.Linq.Expressions;
-
-namespace salvarLaPrincesa;
+﻿namespace salvarLaPrincesa;
 
 class Program
 {
         struct Pagesos
         {
-            public int llança {get; set;}
-            public int espasa {get;set;}
+            public int Llança {get; set;}
+            public int Espasa {get;set;}
         }
 
         struct Soldats
         {
-            public int casc {get; set;}
-            public int espasa {get;set;}
-            public int escut {get;set;}
+            public int Casc {get; set;}
+            public int Espasa {get;set;}
+            public int Escut {get;set;}
         }
 
         struct Cavallers
         {
-            public int casc {get; set;}
-            public int llança {get;set;}
-            public int escut {get;set;}
-            public int armadura {get;set;}
+            public int Casc {get; set;}
+            public int Llança {get;set;}
+            public int Escut {get;set;}
+            public int Armadura {get;set;}
         }
 
 
@@ -58,27 +56,81 @@ class Program
             switch(armes[i])
             {
                 case "Llança":
-                    pagesos.llança++;
-                    cavallers.llança++;
+                    pagesos.Llança++;
+                    cavallers.Llança++;
                     break;
                 case "Espasa":
-                    pagesos.espasa++;
-                    soldats.espasa++;
+                    pagesos.Espasa++;
+                    soldats.Espasa++;
                     break;
                 case "Casc":
-                    soldats.casc++;
-                    cavallers.casc++;
+                    soldats.Casc++;
+                    cavallers.Casc++;
                     break;
                 case "Escut":
-                    soldats.escut++;
-                    cavallers.escut++;
+                    soldats.Escut++;
+                    cavallers.Escut++;
                     break;
                 case "Armadura":
-                    cavallers.armadura++;
+                    cavallers.Armadura++;
                     break;
             }
         }
+        int caballersEnviats = VeureQuinEsElNumeroDeCavallers(cavallers);
+        soldats.Casc -= caballersEnviats;
+        pagesos.Llança -= caballersEnviats;
+        soldats.Escut -= caballersEnviats;
+        cavallers.Casc -= caballersEnviats;
+        cavallers.Llança -= caballersEnviats;
+        cavallers.Armadura -= caballersEnviats;
+        cavallers.Escut -= caballersEnviats;
 
-        Console.WriteLine("Es pot enviar:")
+        int soldatsEnviats = VeureQuinEsElNumeroDeSoldats(soldats);
+        pagesos.Espasa -= soldatsEnviats;
+        soldats.Espasa -= soldatsEnviats;
+        soldats.Casc -= soldatsEnviats;
+        soldats.Escut -= soldatsEnviats;
+
+        int pagesosEnviats = pagesos.Espasa + pagesos.Llança;
+
+        Console.WriteLine("Es pot enviar:");
+        Console.WriteLine($"    Pagesos: {pagesosEnviats}");
+        Console.WriteLine($"    Soldats: {soldatsEnviats}");
+        Console.WriteLine($"    Cavallers: {caballersEnviats}");
+        
+    }
+
+  private static int VeureQuinEsElNumeroDeCavallers(Cavallers cavallers)
+  {
+    int mesPetit = cavallers.Casc;
+
+    if(mesPetit > cavallers.Llança)
+        {
+            mesPetit = cavallers.Llança;
+        }
+    if(mesPetit> cavallers.Escut)
+        {
+            mesPetit = cavallers.Escut;
+        }
+    if(mesPetit > cavallers.Armadura)
+        {
+            mesPetit = cavallers.Armadura;
+        }
+    return mesPetit;
+  }
+  static int VeureQuinEsElNumeroDeSoldats(Soldats soldats)
+    {
+        var mesPetit = soldats.Casc;
+
+        if(mesPetit > soldats.Espasa)
+        {
+            mesPetit = soldats.Espasa;
+        }
+        if(mesPetit > soldats.Escut)
+        {
+            mesPetit = soldats.Escut;
+        }
+
+        return mesPetit;
     }
 }
