@@ -13,7 +13,7 @@ class Program
         try
         {
             string moviments = File.ReadAllText("ascensorista01.txt");
-            List<Robatoris> lladre = [
+            Robatoris[] lladre = [
                 new Robatoris {planta = 1, haParat = false},
                 new Robatoris {planta = 29, haParat = false}
             ];
@@ -32,7 +32,7 @@ class Program
 
                 if(moviments[index] == '*')
                 {
-                    for(int i=0; i<lladre.Count; i++)
+                    for(int i=0; i<lladre.Length; i++)
                     {
                         if(planta == lladre[i].planta)
                         {
@@ -41,15 +41,22 @@ class Program
                     }
                 }
             }
+            if(HaParatALesDosPlantes(lladre))
+            {
+                Console.WriteLine("SI");
+            }else
+            {
+                Console.WriteLine("NO");
+            }
         } catch (IOException)
         {
             Console.WriteLine("Error al llegir el document");
         }
 
     }
-    static bool HaParatALesDosPlantes(List<Robatoris> lladre)
+    static bool HaParatALesDosPlantes(Robatoris[] lladre)
     {
-        for(int i=0; i<lladre.Count;i++)
+        for(int i=0; i<lladre.Length;i++)
         {
             if(lladre[i].haParat == false)
             {
