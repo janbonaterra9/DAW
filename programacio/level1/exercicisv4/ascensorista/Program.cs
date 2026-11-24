@@ -1,4 +1,4 @@
-﻿using Microsoft.VisualBasic;
+using Microsoft.VisualBasic;
 
 namespace ascensorista;
 
@@ -12,15 +12,14 @@ class Program
     {
         try
         {
-            string moviments = File.ReadAllText("ascensorista01.txt");
+            string moviments = File.ReadAllText("ascensorista02.txt");
             Robatoris[] lladre = [
-                new Robatoris {planta = 1, haParat = false},
-                new Robatoris {planta = 29, haParat = false}
+                new Robatoris {planta = 15, haParat = false}
             ];
 
             int index = 0;
             int planta = 0;
-            while(index < moviments.Length && HaParatALesDosPlantes(lladre))
+            while(index < moviments.Length && !HaParatALesDosPlantes(lladre))
             {
                 if(moviments[index] == 'U')
                 {
@@ -40,6 +39,7 @@ class Program
                         }
                     }
                 }
+                index++;
             }
             if(HaParatALesDosPlantes(lladre))
             {
@@ -60,9 +60,9 @@ class Program
         {
             if(lladre[i].haParat == false)
             {
-                return true;
+                return false;
             }
         }
-        return false;
+        return true;
     }
 }
